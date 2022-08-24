@@ -1,3 +1,11 @@
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
 header,footer{
     display: flex;
     justify-content: center;
@@ -5,7 +13,40 @@ header,footer{
     background-color: #1f2937;
     height: 72px;
     color: #E5E7EB;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 .container{
     height: 50px;
+}
+header {
+    justify-content: center;
+}
+.header-contents{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .left{
+    display: flex;
+}
+header .left img{
+    margin: 10px;
+    height: 44px;
+}
+header .right{
+    display: flex;
+}
+.right ul{
+    list-style: none;
+    display: flex;
+}
+.right li{
+    padding: 10px;
+}
+.right li a{
+    text-decoration: none;
+    color: #E5E7EB;
 }
