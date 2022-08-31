@@ -53,6 +53,11 @@ header .left{
 header .left img{
     margin: 10px;
     height: 44px;
+    transition: 0.3s;
+}
+header .left img:hover{
+    height: 54px;
+    transition: 0.3s;
 }
 header .right{
     display: flex;
@@ -68,6 +73,13 @@ header .right{
     text-decoration: none;
     color: purple;
     font-weight: 700;
+    transition: 0.3s;
+}
+.right li a:hover{
+    color: rgb(88, 41, 88);
+    font-weight: 900;
+    font-size: 24px;
+    transition: 0.3s;
 }
 .container{
     display: flex;
