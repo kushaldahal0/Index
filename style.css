@@ -13,6 +13,9 @@ body{
     height: 100%;
 
 }
+
+
+
 header,footer{
     display: flex;
     justify-content: center;
@@ -29,6 +32,9 @@ header,footer{
 /* .container{
     height: 50px;
 } */
+
+
+
 header {
     justify-content: center;
     position: fixed;
@@ -72,6 +78,10 @@ header .right{
     width: 100%;
     flex-direction: column;
 }
+
+
+
+
 .section{
     display: flex;
     height: 100vh;
@@ -121,6 +131,8 @@ header .right{
     width: 100%;
     aspect-ratio: ratio(1);
 }
+
+
 
 .second-section{
     background-color: white;
@@ -194,8 +206,40 @@ header .right{
     font-size: 20px;
     font-weight: 700;
 }
+
+
 .fourth-section{
     background-color: white;
+}
+
+.fourth-section .blue-section{
+    background-color: #3882f6;
+    color:#f9faf8;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+.blue-section .left-side{
+    padding: 0;
+    margin: 0;
+}
+.left-side h1{
+    margin-bottom: 0;
+}
+.left-side p{
+    margin-top: 0;
+}
+.blue-section button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    width: 120px;
+    border-radius: 12px;
+    border: #f9faf8 3px solid;
 }
 
 @media screen and (max-width: 1350px){
@@ -205,11 +249,17 @@ header .right{
         width: 100%;
     }
 
-    .second-section{
+    .second-section,.first-section{
         height: fit-content;
     }
     .second-section .card-container{
         justify-content: space-between;
+    }
+    .card-container .card{
+        flex-basis: 45%;
+    }
+    .card p{
+        width: 250px;
     }
 }
 @media screen and (max-width: 1023px){
@@ -217,6 +267,9 @@ header .right{
         flex-wrap: wrap;
         flex-direction: column-reverse;
         width: 90%;
+    } 
+    .second-section,.first-section{
+        height: fit-content;
     }
 }
 @media screen and (max-width: 675px){
@@ -225,7 +278,9 @@ header .right{
         justify-content: center;
         width: 100%;
     }
-
+    .second-section,.first-section,.third-section{
+        height: fit-content;
+    }
     .first-section .contents{
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -249,6 +304,12 @@ header .right{
     .second-section .card-container{
         justify-content: center;
     }
+    .blue-section{
+        flex-wrap: wrap;
+    }
+    .blue-section .left-side{
+        text-align: justify;
+    }
 }
 @media screen and (max-width: 280px){
     .header-contents{
@@ -257,10 +318,6 @@ header .right{
     }
     .header-list{
         padding: 0px;
-    }
-    .third-section {
-        /* height: fit-content; */
-        
     }
     .third-section .quote{
         font-size: 30px;
