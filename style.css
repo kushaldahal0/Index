@@ -124,8 +124,10 @@ header .right{
 
 .second-section{
     background-color: white;
-    height: fit-content;
+    height: 100vh;
 }
+
+
 .second-section .contents{
     flex-direction: column;
 }
@@ -134,21 +136,24 @@ header .right{
     font-size: 36px;
     font-weight: extra-bold;
     color: #1f2937;
+    width: 100%;
+    text-align: center;
 
 }
 .second-section .card-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 90%;
+
     flex-wrap: wrap;
     flex-basis: content;
+    width: 100%;
+
 }
 .second-section .card{
     width: 250px;
     margin: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 5px;
@@ -167,6 +172,68 @@ header .right{
     font-size: 24px;
 
 }
+@media screen and (max-width: 1350px){
+    .body-container{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .second-section{
+        height: fit-content;
+    }
+    .second-section .card-container{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 1023px){
+    .first-section .contents{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 675px){
+    .body-container{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .first-section .contents{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .first-section .contents .left-part{
+        width: 100%;
+        text-align: justify;
+    }
+    .left-part .buttonspace{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .first-section .contents .right-part{
+        width: 80%;
+    }
+    .second-section .title{
+        font-size: 18px;
+    }
+    .second-section .card-container{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 280px){
+    .header-contents{
+        width: 100%;
+        justify-content: center;
+    }
+    .header-list{
+        padding: 0px;
+    }
+}
+
 .third-section{
     background-color: #E5E7EB;
 }
