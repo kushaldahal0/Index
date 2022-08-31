@@ -124,7 +124,6 @@ header .right{
 
 .second-section{
     background-color: white;
-    height: 100vh;
 }
 
 
@@ -172,6 +171,33 @@ header .right{
     font-size: 24px;
 
 }
+
+
+.third-section{
+    background-color: #E5E7EB;
+}
+.third-section .contents{
+    flex-direction: column;
+}
+.third-section .quote{
+    font-style: italic;
+    font-weight:  lighter;
+    font-size:  36px;
+    color:  #1f2937;
+}
+.third-section .quoter{
+    width: 100%;
+    align-items: end;
+    color: #1f2937;
+    text-align: end;
+    margin-top: -35px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.fourth-section{
+    background-color: white;
+}
+
 @media screen and (max-width: 1350px){
     .body-container{
         align-items: center;
@@ -232,11 +258,15 @@ header .right{
     .header-list{
         padding: 0px;
     }
-}
-
-.third-section{
-    background-color: #E5E7EB;
-}
-.fourth-section{
-    background-color: white;
+    .third-section {
+        /* height: fit-content; */
+        
+    }
+    .third-section .quote{
+        font-size: 30px;
+        text-align: center;
+    }
+    .third-section .quoter{
+        font-size: 12px;
+    }
 }
